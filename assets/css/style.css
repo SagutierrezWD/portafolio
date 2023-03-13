@@ -1,0 +1,880 @@
+:root
+{
+    /* Tamaño */
+    --navH:70px;
+    --footerH:70px;
+    --minContainerH:250px;
+    --buttonRadius:15px;
+
+    /* Fuentes */
+    --fSmall:1.2rem;
+    --fSmallM:1.4rem;
+    --fMedium:1.8rem;
+    --fMediumM:2.2rem;
+    --fHigh:2.5rem;
+    --fHighM:2.8rem;
+
+    /* Tema Claro */
+    --colorLightBg:#DDF7E3;
+    --colorLightBg2:#C9EEFF;
+    --colorLightDet:#62CDFF;
+    --colorLightText:#4E6E81;
+    --colorLightText2:#060047;
+
+    /* Tema Oscuro */
+    --colorDarkBg:#2C3333; /* 60% */
+    --colorDarkBg2:#2E4F4F; /* 30% */
+    --colorDarkDet:#0E8388; /* 10% */
+    --colorDarkText:#CBE4DE;
+    --colorDarkText2:#62CDFF;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    transition: color .45s ease-in-out;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+
+nav
+{
+    width: 100%;
+    height: var(--navH);
+    
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+
+    background: var(--colorLightBg);
+    z-index: 5;
+}
+
+.logo
+{
+    align-self: center;
+    padding: 0 15px;
+}
+
+.nav__list
+{
+    display: none;
+}
+
+#menu-icon
+{
+    font-size: 3rem;
+    align-self: center;
+}
+
+main
+{
+    background: var(--colorLightDet);
+    display: flex;
+    flex-direction: column;
+}
+
+.container
+{
+    min-height: var(--minContainerH);
+    padding: 15px 25px;
+    background: var(--colorLightDet);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 1400px; */
+    /* margin: 0 auto; */
+} 
+
+/* Division de Hero */
+.hero
+{
+    background: var(--colorLightBg);
+    
+    width: 100%;
+    height: calc(100vh + 5rem);
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__text
+{
+    /* position: absolute;
+    left: 7rem; */
+    /* margin-top: calc(var(--navH) +  2rem); */
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__text span
+{
+    font-size: 1.8rem;
+    color: darkslategray;
+}
+
+.hero__text h1
+{
+    font-size: 4rem;
+    color: #62CDFF;
+}
+
+.hero__text p
+{
+    font-size: 1.2rem;
+    margin: 15px 0 5px 0;
+}
+
+.btn
+{
+    padding: 15px 25px;
+    font-size: 24px;
+    border-radius: var(--buttonRadius);
+}
+
+.btn-azul
+{
+    background: var(--colorLightDet);
+    border: 2px solid var(--colorLightDet);
+    color: white;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+/* Division Acerca */
+.about
+{
+    display: flex;
+    flex-direction: column;
+
+    background: var(--colorLightBg2);
+}
+
+.about__content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-resume
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--colorLightDet);
+    font-size: 20px;
+    padding: 15px;
+    margin-top: -50px;
+    border-radius: 15px;
+    /* max-width: 900px; */
+}
+
+.card-resume p
+{
+    margin-top: 5px;
+}
+
+.title
+{
+    position: relative;
+    font-size: var(--fSmallM);
+}
+
+.title::before
+{
+    content:"";
+    position: absolute;
+    background: #060047;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+}
+
+/* Formacion e intereses */
+.formation-list, .interest
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle
+{
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+.formation
+{
+    position: relative;
+    margin: 5px 0;
+}
+
+.formation::before
+{
+    content:'';
+    position: absolute;
+    background: var(--colorLightText2);
+    width: 5px;
+    height: 100%;
+    left: 10px;
+    left: 5px;
+}
+
+.formation__title
+{
+    margin-left: 15px;
+    color: white;
+}
+
+.formation__place
+{
+    margin-left: 20px;
+    font-size: 18px;
+    color:#2C3333;
+}
+
+.formation__period
+{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #2E4F4F;
+}
+
+.hobby__list
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+}
+
+.hobby
+{
+    padding: 5px 10px;
+}
+
+.hobby i
+{
+    color: var(--colorLightText2);
+}
+
+
+.about__aside
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img
+{
+    max-width: 280px;
+    width: 80%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    aspect-ratio: 4/5;
+}
+
+
+/* Division de Habilidades */
+.skill-list
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.skill
+{
+    width: 100px;
+    min-width: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill__icon
+{
+    width: 90px;
+    aspect-ratio: 1/1;
+    background: red;
+}
+
+
+/* Division de Proyectos */
+.projects
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.project
+{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--colorLightBg2);
+}
+
+.project .subtitle
+{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.project .project__desc
+{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.project__ss
+{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: red;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.project__actions
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn-sitio, .btn-repo
+{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    min-width: 50px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.btn-sitio
+{
+    background: red;
+}
+
+.btn-repo
+{
+    background: turquoise;
+}
+
+
+/* Division de Contactos */
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-list
+{
+    margin-top: 20px;
+}
+
+.contact-item
+{
+    display: flex;
+    align-items: center;
+}
+
+.contact-list .contact-item i
+{
+    font-size: var(--fMedium);
+    margin-right: 5px;
+}
+
+.contact-list .contact-item a
+{
+    text-decoration: none;
+}
+
+
+/* Formulario */
+.formulary
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title
+{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form
+{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control
+{
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-control:focus
+{
+    outline: none;
+}
+
+input, textarea
+{
+    font-size: 1.1rem;
+}
+
+textarea
+{
+    resize: none;
+}
+
+.btn-submit
+{
+    border-radius: unset;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* Footer */
+footer
+{
+    height: var(--footerH);
+    background: var(--colorLightBg2);
+}
+
+
+@media screen and (min-width:768px) {
+    .nav__list
+    {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .nav__link
+    {
+        padding: 5px 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    #menu-icon
+    {
+        display: none;
+    }
+
+
+    /* Division de Hero */
+    .hero
+    {
+        flex-direction: row;
+    }
+
+    .hero__text
+    {
+        width: 45%;
+    }
+
+    .btn-azul
+    {
+        max-width: 350px;
+    }
+
+    .hero__img
+    {
+        /* Espacio asignado para ilustracion */
+        width: 45%;
+        aspect-ratio: 4/3;
+        background: red;
+    }
+
+
+    /* Division de Acerca */
+    .about
+    {
+        align-items: center;
+    } 
+
+    .card-resume
+    {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    /* Division de Habilidades */
+    .skill-list
+    {
+        width: 80%;
+    }
+
+
+    /* Division de Proyectos */
+    .project
+    {
+        width: 70%;
+    }
+
+    .project .subtitle
+    {
+        font-size: 1.6rem;
+    }
+
+    .project__desc
+    {
+        font-size: 1.4rem;
+    }
+
+
+    /* Division de Contactos */
+    .contact-section
+    {
+        width: 100%;
+    }
+
+    .contact-list
+    {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-item
+    {
+        margin-left: 40%;
+    }
+
+    .form
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    /* Division de Acerca */
+    .resume
+    {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .card-resume
+    {
+        width: 55%;
+    }
+
+    .about__aside
+    {
+        width: 45%;
+        justify-content: flex-end;
+    }
+
+    .hobby__list
+    {
+        justify-content: space-around;
+    }
+
+
+
+
+    /* Division de Proyectos */
+    .project
+    {
+        margin: 30px 0;
+    }
+    .project-list
+    {
+        align-items: center;
+    }
+
+    .project
+    {
+        flex-direction: row;
+    }
+
+    .project__details
+    {
+        width: 32vw;
+        height: 20vw;
+    }
+
+    .project__ss
+    {
+        max-width: 55%;
+    }
+
+    .project__details
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 45%;
+        min-height: 100%;
+    }
+
+    .project .subtitle
+    {
+        font-size: 1.2rem;
+    }
+
+    .project__desc
+    {
+        font-size: 1rem;
+        align-self: flex-start;
+    }
+
+    .project__actions
+    {
+        margin-bottom: unset;
+    }
+
+    .btn-sitio, .btn-repo
+    {
+        align-self: flex-end;
+    }
+
+
+    /* Division de Contactos */
+    .contact-section
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .contact-list
+    {
+        width: 20%;
+        margin-top: unset;
+        margin-left: -25px;
+        justify-content: center;
+    }
+
+    .contact-item
+    {
+        margin-left: unset;
+        margin-bottom: 15%;
+    }
+
+    .contact-item i
+    {
+        background: white;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .formulary
+    {
+        width: 60%;
+    }
+
+    .form
+    {
+        width: 100%;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .form-row
+    {
+        width: 100%;
+        display: flex;
+    }
+
+    .last
+    {
+        margin-left: 10px;
+    }
+
+    .form-medium
+    {
+        width: 49.5%;
+
+    }
+}
+
+@media screen and (min-width:1280px) {
+    /* Division de Acerca */
+    .card-resume
+    {
+        width: 70%;
+    }
+    
+    .about__aside
+    {
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Division de Proyectos */
+    .projects
+    {
+        padding: 0 25px 15px 25px;
+        margin-top: -20px;
+    }
+
+    .project__details .subtitle
+    {
+        font-size: 1.9rem;
+    }
+
+    .project__desc
+    {
+        font-size: 1.3rem;
+    }
+
+    .btn-sitio, .btn-repo
+    {
+        font-size: 1.6rem;
+        padding: 15px 20px;
+    }
+
+
+    /* Division de Habilidades */
+    .skills 
+    {
+        padding: 15px 25px 0 15px;
+        margin-top: 10px;
+    }
+
+
+    /* Division de Contactos */
+    .contact-ways
+    {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .contact-card
+    {
+        font-size: 1.6rem;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width:1900px) {
+    /* Division de Nav */
+    .logo, .nav__link
+    {
+        font-size: 1.4rem;
+    }
+
+
+    /* Division de Hero */
+    .hero__text span
+    {
+        font-size: 2.5rem;
+    }
+
+    .hero__text h1
+    {
+        font-size: 8rem;
+    }
+
+    .hero__text p
+    {
+        font-size: 1.6rem;
+    }
+
+    .btn-azul
+    {
+        font-size: 2.2rem;
+    }
+
+
+    /* Division Acerca */
+    .card-resume
+    {
+        justify-content: center;
+    }
+
+    .title
+    {
+        font-size: var(--fHigh);
+    }
+
+    .card-resume p
+    {
+        font-size: var(--fMediumM);
+    }
+
+    .img
+    {
+        max-width: 400px;
+    }
+
+
+    /* Division de Footer */
+    footer
+    {
+        font-size: 1.4rem;
+    }
+}
