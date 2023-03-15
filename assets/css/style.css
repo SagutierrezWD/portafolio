@@ -574,6 +574,7 @@ main
 {
     display: flex;
     align-items: center;
+    margin: 10px 0;
 }
 
 .contact-list .contact-item i
@@ -654,6 +655,7 @@ textarea
     color: var(--colorText4);
     border: 1px solid var(--colorDet);
     margin-top: 3px;
+    margin-bottom: 40px;
 }
 
 .btn-submit:hover
@@ -791,6 +793,11 @@ footer
         width: 70%;
         align-items: flex-start;
     }
+
+    .form-row
+    {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -882,13 +889,13 @@ footer
     .contact-section
     {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
     .contact-list
     {
-        width: 20%;
+        width: 30%;
         margin-top: unset;
         margin-left: -25px;
         justify-content: center;
@@ -897,6 +904,7 @@ footer
     .contact-item
     {
         margin-left: unset;
+        margin-left: 20px;
         margin-bottom: 15%;
     }
 
@@ -908,6 +916,7 @@ footer
 
     .formulary
     {
+        margin-left: 2%;
         width: 60%;
     }
 
@@ -933,6 +942,11 @@ footer
     {
         width: 49.5%;
 
+    }
+
+    .btn-submit
+    {
+        margin-bottom: initial;
     }
 }
 
@@ -992,12 +1006,6 @@ footer
 
 
     /* Division de Contactos */
-    .contact-ways
-    {
-        flex-direction: row;
-        margin-top: 20px;
-    }
-
     .contact-card
     {
         font-size: 1.6rem;
@@ -1054,6 +1062,18 @@ footer
     .img
     {
         max-width: 400px;
+    }
+
+
+    /* Division de Contactos */
+    .formulary
+    {
+        margin-left: unset;
+    }
+
+    .contact-list
+    {
+        width: 20%;
     }
 
 
