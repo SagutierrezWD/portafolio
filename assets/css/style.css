@@ -21,6 +21,19 @@
     --colorLightText:#4E6E81;
     --colorLightText2:#060047;
 
+    /* Tema 2.0 */
+    --colorBg1:#EBFFFA;
+    --colorBg1Alt:#D9F9F4;
+    --colorBg2:#9CD9DE;
+    --colorBg2Alt:#86C1D4;
+    --colorDet:#005792;
+    --colorDetAlt:#0779E4;
+    --colorText1:#456268;
+    --colorText2:#79A3B1;
+    --colorText3:#01A9B4;
+    --colorText4:#D0E8F2;
+
+
     /* Tema Oscuro */
     --colorDarkBg:#2C3333; /* 60% */
     --colorDarkBg2:#2E4F4F; /* 30% */
@@ -43,25 +56,39 @@ html, body{
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
-    scroll-padding-top: 60px;
+    scroll-padding-top: 70px;
 }
 
 
+/* Nav */
 nav
 {
     width: 100%;
     height: var(--navH);
     
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
 
-    background: var(--colorLightBg);
+    background: var(--colorBg1);
     z-index: 5;
+}
+
+.nav__link
+{
+    color: var(--colorDet);
+    font-size: 1.2rem;
+}
+
+.nav__link:hover
+{
+    color: var(--colorText3);
 }
 
 .logo
 {
+    font-size: 1.2rem;
+    color: var(--colorDet);
     align-self: center;
     padding: 0 15px;
 }
@@ -75,11 +102,13 @@ nav
 {
     font-size: 3rem;
     align-self: center;
+    color: var(--colorDet);
 }
 
+/* Contenedores */
 main
 {
-    background: var(--colorLightDet);
+    background: var(--colorBg1Alt);
     display: flex;
     flex-direction: column;
 }
@@ -88,7 +117,7 @@ main
 {
     min-height: var(--minContainerH);
     padding: 15px 25px;
-    background: var(--colorLightDet);
+    background: var(--colorBg1Alt);
 
     display: flex;
     flex-direction: column;
@@ -97,10 +126,11 @@ main
     /* margin: 0 auto; */
 } 
 
+
 /* Division de Hero */
 .hero
 {
-    background: var(--colorLightBg);
+    background: var(--colorBg1);
     
     width: 100%;
     height: calc(100vh + 5rem);
@@ -132,13 +162,14 @@ main
 .hero__text h1
 {
     font-size: 4rem;
-    color: #62CDFF;
+    color: var(--colorDetAlt);
 }
 
 .hero__text p
 {
     font-size: 1.2rem;
     margin: 15px 0 5px 0;
+    color: var(--colorText1);
 }
 
 .btn
@@ -150,14 +181,33 @@ main
 
 .btn-azul
 {
-    background: var(--colorLightDet);
-    border: 2px solid var(--colorLightDet);
+    background: var(--colorDet);
+    border: 2px solid var(--colorDet);
     color: white;
     margin-top: 20px;
 
     display: flex;
     justify-content: center;
     text-decoration: none;
+}
+
+.btn-azul:hover
+{
+    border: 2px solid var(--colorDet);
+    color: var(--colorDet);
+    background: transparent;
+}
+
+.btn-azulAlt
+{
+    color: var(--colorDet);
+    background: transparent;
+}
+
+.btn-azulAlt:hover
+{
+    background: var(--colorDet);
+    color: var(--colorText4);
 }
 
 
@@ -167,7 +217,7 @@ main
     display: flex;
     flex-direction: column;
 
-    background: var(--colorLightBg2);
+    background: var(--colorDet);
 }
 
 .about__content
@@ -182,7 +232,7 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--colorLightDet);
+    background: var(--colorBg2);
     font-size: 20px;
     padding: 15px;
     margin-top: -50px;
@@ -199,6 +249,7 @@ main
 {
     position: relative;
     font-size: var(--fSmallM);
+    color: var(--colorDet);
 }
 
 .title::before
@@ -223,6 +274,7 @@ main
 {
     align-self: flex-start;
     margin-top: 15px;
+    color: var(--colorDetAlt);
 }
 
 .formation
@@ -278,7 +330,7 @@ main
 
 .hobby i
 {
-    color: var(--colorLightText2);
+    color: var(--colorDet);
 }
 
 
@@ -322,11 +374,73 @@ main
 
 .skill__icon
 {
-    width: 90px;
+    width: 40px;
     aspect-ratio: 1/1;
-    background: red;
 }
 
+.htmltag
+{
+    background-image: url(/assets/resource/htmlicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.css
+{
+    background-image: url(/assets/resource/cssicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.js 
+{
+    background-image: url(/assets/resource/js.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.php 
+{
+    background-image: url(/assets/resource/php.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ts 
+{
+    background-image: url(/assets/resource/typescript.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ang
+{
+    background-image: url(/assets/resource/angular.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.react 
+{
+    background-image: url(/assets/resource/reacti.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.git
+{
+    background-image: url(/assets/resource/git.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
 
 /* Division de Proyectos */
 .projects
@@ -371,10 +485,17 @@ main
 {
     width: 100%;
     aspect-ratio: 16/9;
-    background: red;
     display: flex;
     position: relative;
     overflow: hidden;
+}
+
+.p1
+{
+    background-image: url(/assets/resource/p1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .project__actions
@@ -399,14 +520,41 @@ main
 
 .btn-sitio
 {
-    background: red;
+    background: var(--colorDet);
+    color: var(--colorText4);
+    border: 1px solid var(--colorDet);
+}
+
+.btn-sitio:hover.btn-sitio:not(:disabled)
+{
+    background: transparent;
+    color: var(--colorDet);
+}
+
+.btn-sitio[disabled]
+{
+    background: var(--colorLightText);
+    border: 1px solid var(--colorLightText);
 }
 
 .btn-repo
 {
-    background: turquoise;
+    background: transparent;
+    color: var(--colorDet);
+    border: 1px solid var(--colorDet);
 }
 
+.btn-repo:hover.btn-repo:not(:disabled)
+{
+    background: var(--colorDet);
+    color: var(--colorText4);
+}
+
+.btn-repo[disabled]
+{
+    color: var(--colorLightText);
+    border: 1px solid var(--colorLightText);
+}
 
 /* Division de Contactos */
 .contact
@@ -414,6 +562,7 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--colorBg1Alt);
 }
 
 .contact-list
@@ -431,11 +580,20 @@ main
 {
     font-size: var(--fMedium);
     margin-right: 5px;
+    border-radius: 50%;
+    background: var(--colorDet);
+    color: var(--colorBg1);
 }
 
 .contact-list .contact-item a
 {
     text-decoration: none;
+}
+
+.contact-list .contact-item p, .contact-list .contact-item a
+{
+    color: var(--colorText1);
+    
 }
 
 
@@ -492,6 +650,16 @@ textarea
     border-radius: unset;
     cursor: pointer;
     font-size: 20px;
+    background: var(--colorDet);
+    color: var(--colorText4);
+    border: 1px solid var(--colorDet);
+    margin-top: 3px;
+}
+
+.btn-submit:hover
+{
+    background: transparent;
+    color: var(--colorDet);
 }
 
 
@@ -504,6 +672,12 @@ footer
 
 
 @media screen and (min-width:768px) {
+    /* Nav */
+    nav
+    {
+        justify-content: space-around;
+    }
+
     .nav__list
     {
         display: block;
@@ -548,7 +722,10 @@ footer
         /* Espacio asignado para ilustracion */
         width: 45%;
         aspect-ratio: 4/3;
-        background: red;
+        background-image: url(/assets/resource/illus.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
 
@@ -576,7 +753,7 @@ footer
     /* Division de Proyectos */
     .project
     {
-        width: 70%;
+        width: 80%;
     }
 
     .project .subtitle
@@ -612,6 +789,7 @@ footer
     .form
     {
         width: 70%;
+        align-items: flex-start;
     }
 }
 
@@ -640,8 +818,6 @@ footer
     {
         justify-content: space-around;
     }
-
-
 
 
     /* Division de Proyectos */
@@ -728,7 +904,6 @@ footer
     {
         background: white;
         padding: 10px;
-        border-radius: 50%;
     }
 
     .formulary
@@ -767,11 +942,21 @@ footer
     {
         width: 70%;
     }
+
+    .hobby__list
+    {
+        flex-direction: column;
+    }
     
     .about__aside
     {
         display: flex;
         justify-content: center;
+    }
+
+    .img
+    {
+        max-width: 400px;
     }
     
     /* Division de Proyectos */
@@ -853,7 +1038,7 @@ footer
     /* Division Acerca */
     .card-resume
     {
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .title
@@ -863,7 +1048,7 @@ footer
 
     .card-resume p
     {
-        font-size: var(--fMediumM);
+        font-size: 16px;
     }
 
     .img

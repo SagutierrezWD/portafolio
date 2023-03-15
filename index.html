@@ -14,25 +14,25 @@
             Portafolio
         </div>
         <ul class="nav__list">
-            <li><a href="#" class="nav__link">Inicio</a></li>
-            <li><a href="#" class="nav__link">Sobre mi</a></li>
-            <li><a href="#" class="nav__link">Habilidades</a></li>
-            <li><a href="#" class="nav__link">Proyectos</a></li>
-            <li><a href="#" class="nav__link">Contactos</a></li>
+            <li><a href="#hero" class="nav__link">Inicio</a></li>
+            <li><a href="#about" class="nav__link">Sobre mi</a></li>
+            <li><a href="#skills" class="nav__link">Habilidades</a></li>
+            <li><a href="#projects" class="nav__link">Proyectos</a></li>
+            <li><a href="#contacts" class="nav__link">Contactos</a></li>
         </ul>
         <div class="bx bx-menu" id="menu-icon">
             
         </div>
     </nav>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero__text">
                 <span>Hola, soy</span>
                 <h1>Sergio</h1>
                 <p>Desarrollador Web</p>
                 <div class="hero__buttons">
                     <a href="#projects" class="btn btn-azul">Mis proyectos</a>
-                    <a href="#skills" class="btn btn-azul">Habilidades</a>
+                    <a href="#skills" class="btn btn-azul btn-azulAlt">Habilidades</a>
                 </div>
             </div>
             <div class="hero__img">
@@ -41,20 +41,20 @@
         </section> 
         <section class="container about">
             <div class="resume">
-                <div class="card-resume">
+                <div class="card-resume" id="about">
                     <h2 class="title">Sobre mi</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae. Nam quas laudantium eos id dolorum esse expedita, quos odit. Asperiores voluptas aliquid expedita voluptatem, doloremque ea exercitationem optio minima.</p>
 
                     <div class="formation-list">
                         <h3 class="subtitle">Formacion</h3>
                         <div class="formation">
-                            <h4 class="formation__title">Ingeniera de Sistemas</h4>
+                            <h4 class="formation__title">Ingenieria de Sistemas</h4>
                             <span class="formation__place">INFOTEP</span>
                             <p class="formation__period">2019 - 2021</p>
                         </div>
 
                         <div class="formation">
-                            <h4 class="formation__title">Desarrollador Frontend (Junior)</h4>
+                            <h4 class="formation__title">Desarrollo Frontend (Junior)</h4>
                             <span class="formation__place">ALURA</span>
                             <p class="formation__period">En proceso</p>
                         </div>
@@ -89,49 +89,49 @@
             <div class="skill-list">
                 <div class="skill">
                     <h3 class="skill__name">HTML</h3>
-                    <div class="skill__icon">
+                    <div class="skill__icon htmltag">
 
                     </div>             
                 </div>
                 <div class="skill">
                     <h3 class="skill__name">CSS</h3>
-                    <div class="skill__icon">
+                    <div class="skill__icon css">
                         
                     </div>
                 </div>
                 <div class="skill">
                     <h3 class="skill__name">Javascript</h3>
-                    <div class="skill__icon">
+                    <div class="skill__icon js">
                         
                     </div>
                 </div>
                 <div class="skill">
                     <h3 class="skill__name">PHP</h3>
-                    <div class="skill__icon">
+                    <div class="skill__icon php">
                         
                     </div>
                 </div>
                 <div class="skill">
                     <h3 class="skill__name">Typescript</h3>
-                    <div class="skill__icon">
+                    <div class="skill__icon ts">
                         
                     </div>
                 </div>
                 <div class="skill">
                     <h3 class="skill__name">Angular</h3>
-                    <div class="skill__icon">
+                    <div class="skill__icon ang">
                         
                     </div>
                 </div>
                 <div class="skill">
                     <h3 class="skill__name">React</h3>
-                    <div class="skill__icon">
+                    <div class="skill__icon react">
                         
                     </div>
                 </div>
                 <div class="skill">
                     <h3 class="skill__name">Git</h3>
-                    <div class="skill__icon">
+                    <div class="skill__icon git">
                         
                     </div>
                 </div>
@@ -141,7 +141,7 @@
             <h2 class="title">Proyectos</h2>
             <div class="project-list">
                 <div class="project">
-                    <div class="project__ss"></div>
+                    <div class="project__ss p1"></div>
                     <div class="project__details">
                         <h3 class="subtitle">Alura Encriptador</h3>
                         <p class="project__desc">
@@ -210,7 +210,7 @@
                 </div>
             </div>
         </section>
-        <section class="container contact">
+        <section class="container contact" id="contacts">
             <h2 class="title">Contactos</h2>
             <div class="contact-section">
                 <div class="contact-list">
@@ -225,12 +225,11 @@
 
                     <div class="contact-item">
                         <i class="bx bx-location-plus"></i>
-                        Colombia
+                        <p>Colombia</p>
                     </div>
                 </div>
                 <div class="formulary">
                     <form action="" class="form">
-                        <h3 class="form-title">Formulario</h3>
                         <div class="form-row">
                             <input class="form-control form-medium" type="text" placeholder="Nombre" required>
                             <input class="form-control form-medium last" type="email" name="" id="" placeholder="Email" required>
