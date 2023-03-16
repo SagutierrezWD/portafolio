@@ -6,14 +6,6 @@
     --minContainerH:250px;
     --buttonRadius:15px;
 
-    /* Fuentes */
-    --fSmall:1.2rem;
-    --fSmallM:1.4rem;
-    --fMedium:1.8rem;
-    --fMediumM:2.2rem;
-    --fHigh:2.5rem;
-    --fHighM:2.8rem;
-
     /* Tema Claro */
     --colorLightBg:#DDF7E3;
     --colorLightBg2:#C9EEFF;
@@ -248,7 +240,7 @@ main
 .title
 {
     position: relative;
-    font-size: var(--fSmallM);
+    font-size: 1.4rem;
     color: var(--colorDet);
 }
 
@@ -579,7 +571,7 @@ main
 
 .contact-list .contact-item i
 {
-    font-size: var(--fMedium);
+    font-size: 1.8rem;
     margin-right: 5px;
     border-radius: 50%;
     background: var(--colorDet);
@@ -1004,6 +996,11 @@ footer
         margin-top: 10px;
     }
 
+    .skill__icon
+    {
+        width: 70px;
+    }
+
 
     /* Division de Contactos */
     .contact-card
@@ -1017,7 +1014,7 @@ footer
     /* Division de Nav */
     .logo, .nav__link
     {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
 
@@ -1051,17 +1048,77 @@ footer
 
     .title
     {
-        font-size: var(--fHigh);
+        font-size: 2.5rem;
     }
 
     .card-resume p
     {
-        font-size: 16px;
+        font-size: 1.8rem;
+    }
+
+    .formation-list .subtitle, .interest .subtitle
+    {
+        font-size: 2.3rem;
+    }
+
+    .formation .formation__title
+    {
+        font-size: 2rem;
+    }
+
+    .formation__place
+    {
+        font-size: 1.6rem;
+    }
+
+    .formation .formation__period
+    {
+        font-size: 1.4rem;
+    }
+
+    .hobby
+    {
+        font-size: 1.7rem;
     }
 
     .img
     {
-        max-width: 400px;
+        max-width: 500px;
+    }
+
+
+    /* Division de Habilidades */
+    .skill
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .skill__name
+    {
+        font-size: 1.3rem;
+    }
+
+    .skill__icon
+    {
+        width: 100px;
+    }
+
+
+    /* Division de Proyectos */
+    .project .project__details .subtitle
+    {
+        font-size: 2.5rem;
+    }
+
+    .project .project__details .project__desc
+    {
+        font-size: 1.8rem;
+    }
+
+    .btn-sitio, .btn-repo
+    {
+        font-size: 2.2rem;
     }
 
 
@@ -1070,10 +1127,21 @@ footer
     {
         margin-left: unset;
     }
-
+    
     .contact-list
     {
+        margin: 0 90px 0 0;
         width: 20%;
+    }
+
+    .contact-list .contact-item i 
+    {
+        font-size: 3rem;
+    }
+
+    .contact-item a, .contact-item p 
+    {
+        font-size: 1.5rem;
     }
 
 
