@@ -86,9 +86,40 @@ nav
 }
 
 .nav__list
-{
-    display: none;
-}
+    {
+        position: fixed;
+        top: var(--navH);
+        bottom:0;
+        right: 0;
+        left: 40%;
+        /* height: calc(100vh - var(--navH)); */
+        transition: transform 0.3s;
+        pointer-events: none;
+        list-style: none;
+        background: var(--colorBg1Alt);
+        transform: translateX(100%);
+    }
+
+    .nav__list.active
+    {
+        pointer-events: initial;
+        transform: translateX(0);
+    }
+
+    .nav__list li
+    {
+        width: auto;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .nav__link
+    {
+        text-decoration: none;
+    }
 
 #menu-icon
 {
@@ -96,6 +127,42 @@ nav
     align-self: center;
     color: var(--colorDet);
 }
+
+.nav-mobile
+{
+    display: none;
+    list-style: none;
+    position: fixed;
+    /* width: 100%; */
+    height: calc(100% - var(--navH));
+    top: var(--navH);
+    right: 0;
+    background: gray;
+    transition: left 600ms ease;
+}
+
+.nav-mobile.active
+{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+
+.nav-mobile li
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li .nav-mobile-link
+{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
 
 /* Contenedores */
 main
@@ -672,9 +739,8 @@ footer
         justify-content: space-around;
     }
 
-    .nav__list
+    /* .nav__list
     {
-        display: block;
         display: flex;
         justify-content: space-between;
         list-style: none;
@@ -687,6 +753,33 @@ footer
         display: flex;
         align-items: center;
         text-decoration: none;
+    } */
+
+    .nav__list 
+    {
+        top: initial;
+        bottom: initial;
+        left: initial;
+        right: initial;
+
+        pointer-events: initial;
+
+        position: initial;
+
+        display: flex;
+        flex-direction: row;
+
+        transform: translateX(0);
+        background: transparent;
+    }
+
+    .nav__link
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
     }
 
     #menu-icon
