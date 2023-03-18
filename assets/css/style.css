@@ -526,7 +526,7 @@ main
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: var(--colorLightBg2);
+    background-color: var(--colorBg2);
 }
 
 .project .subtitle
@@ -549,12 +549,26 @@ main
     overflow: hidden;
 }
 
+.working
+{
+    background-image: url(/assets/resource/working.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--colorBg2Alt);
+}
+
 .p1
 {
     background-image: url(/assets/resource/p1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.project__details
+{
+    background-color: var(--colorBg2);
 }
 
 .project__actions
@@ -579,33 +593,33 @@ main
 
 .btn-sitio
 {
-    background: var(--colorDet);
+    background-color: var(--colorDet);
     color: var(--colorText4);
     border: 1px solid var(--colorDet);
 }
 
 .btn-sitio:hover.btn-sitio:not(:disabled)
 {
-    background: transparent;
+    background-color: transparent;
     color: var(--colorDet);
 }
 
 .btn-sitio[disabled]
 {
-    background: var(--colorLightText);
+    background-color: var(--colorLightText);
     border: 1px solid var(--colorLightText);
 }
 
 .btn-repo
 {
-    background: transparent;
+    background-color: transparent;
     color: var(--colorDet);
     border: 1px solid var(--colorDet);
 }
 
 .btn-repo:hover.btn-repo:not(:disabled)
 {
-    background: var(--colorDet);
+    background-color: var(--colorDet);
     color: var(--colorText4);
 }
 
@@ -989,6 +1003,7 @@ footer span, .social-media, .action
     .project__ss
     {
         max-width: 55%;
+        margin-top: -1px;
     }
 
     .project__details
