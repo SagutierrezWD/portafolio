@@ -729,6 +729,59 @@ footer
 {
     height: var(--footerH);
     background: var(--colorLightBg2);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+footer span, .social-media, .action
+{
+    width: 30%;
+    max-width: 300px;
+}
+
+footer span, .social-media, .action
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action
+{
+    justify-content: flex-end;
+}
+
+.social-media a i
+{
+    font-size: 1.8rem;
+    color: var(--colorDet);
+}
+
+.bxl-github:hover
+{
+    color: darkslategrey;
+}
+
+.bxl-linkedin:hover
+{
+    color: #0779E4;
+}
+
+.btn-small
+{
+    padding: 5px;
+    height: 60%;
+
+    border: 1px solid var(--colorDet);
+    background: var(--colorDet);
+    color: white;
+}
+
+.btn-small:hover
+{
+    background: var(--colorDetAlt);
+    border: 1px solid var(--colorDetAlt);
 }
 
 
@@ -1033,6 +1086,13 @@ footer
     {
         margin-bottom: initial;
     }
+
+
+    /* Footer */
+    .action
+    {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width:1280px) {
@@ -1242,5 +1302,15 @@ footer
     footer
     {
         font-size: 1.4rem;
+    }
+
+    .social-media a i
+    {
+        font-size: 2.5rem;
+    }
+
+    .action a i 
+    {
+        font-size: 2rem;
     }
 }
