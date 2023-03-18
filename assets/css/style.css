@@ -14,17 +14,34 @@
     --colorLightText2:#060047;
 
     /* Tema 2.0 */
+    /* --colorBg1:#EBFFFA;
+    --colorBg1Alt:#D9F9F4;
+    --colorBg2:#9CD9DE;
+    --colorBg2Alt:#86C1D4;
+    --colorDet:#005792;
+    --colorDetAlt:#0779E4;
+    --colorDetExtra:#005792;
+    --colorDisabled:#4E6E81;
+    --colorText1:#456268;
+    --colorText2:#79A3B1;
+    --colorText3:#01A9B4;
+    --colorText4:#D0E8F2; */
+
+    /* Tema 3.0 */
     --colorBg1:#EBFFFA;
     --colorBg1Alt:#D9F9F4;
     --colorBg2:#9CD9DE;
     --colorBg2Alt:#86C1D4;
     --colorDet:#005792;
     --colorDetAlt:#0779E4;
+    --colorDetExtra:#005792;
+    --colorDisabled:#4E6E81;
+    --colorForm:white;
+    --colorFooter:#C9EEFF;
     --colorText1:#456268;
     --colorText2:#79A3B1;
     --colorText3:#01A9B4;
     --colorText4:#D0E8F2;
-
 
     /* Tema Oscuro */
     --colorDarkBg:#2C3333; /* 60% */
@@ -41,7 +58,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 
-    transition: color .45s ease-in-out;
+    transition: border, color, background-color .45s ease-in-out;
 }
 
 html, body{
@@ -49,6 +66,26 @@ html, body{
     height: 100%;
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
+}
+
+
+/* Modo oscuro */
+body.dark
+{
+    --colorBg1:#2C3333;
+    --colorBg1Alt:#2E4F4F;
+    --colorBg2:#476D7C;
+    --colorBg2Alt:rgb(85, 106, 124);
+    --colorDet:#05d9ff;
+    --colorDetAlt:#3aaef1;
+    --colorDetExtra:#061a33;
+    --colorDisabled:#7da7c0;
+    --colorForm:rgb(206, 220, 233);
+    --colorFooter:#5a6d75;
+    --colorText1:#A3C7D6;
+    --colorText2:#79A3B1;
+    --colorText3:#01A9B4;
+    --colorText4:#D0E8F2;
 }
 
 
@@ -119,6 +156,61 @@ nav
     .nav__link
     {
         text-decoration: none;
+    }
+
+    .mode
+    {
+        width: 60%;
+        height: 40px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+
+        border-radius: 15px;
+    }
+
+    .mode 
+    {
+        font-size: 1.4rem;
+    }
+
+    .mode i 
+    {
+        font-size: 2rem;
+        pointer-events: none;
+    }
+
+    .bx-moon
+    {
+        color: var(--colorText4);
+    }
+
+    .bx-sun
+    {
+        color: yellow;
+    }
+
+    .icon-down
+    {
+        margin-top: 65px;
+    }
+
+    .icon-up
+    {
+        margin-top: unset;
+    }
+
+    .dark
+    {
+        background-color: #060047;
+    }
+
+    .light
+    {
+        background-color: deepskyblue;
     }
 
 #menu-icon
@@ -215,7 +307,7 @@ main
 .hero__text span
 {
     font-size: 1.8rem;
-    color: darkslategray;
+    color: var(--colorText1);
 }
 
 .hero__text h1
@@ -228,7 +320,7 @@ main
 {
     font-size: 1.2rem;
     margin: 15px 0 5px 0;
-    color: var(--colorText1);
+    color: var(--colorText2);
 }
 
 .btn
@@ -276,7 +368,7 @@ main
     display: flex;
     flex-direction: column;
 
-    background: var(--colorDet);
+    background: var(--colorDetExtra);
 }
 
 .about__content
@@ -315,7 +407,7 @@ main
 {
     content:"";
     position: absolute;
-    background: #060047;
+    background: var(--colorDetAlt);
     width: 100%;
     height: 2px;
     bottom: 0;
@@ -346,7 +438,7 @@ main
 {
     content:'';
     position: absolute;
-    background: var(--colorLightText2);
+    background: var(--colorDetAlt);
     width: 5px;
     height: 100%;
     left: 10px;
@@ -370,7 +462,7 @@ main
 {
     margin-left: 20px;
     font-size: 16px;
-    color: #2E4F4F;
+    color: var(--colorText2);
 }
 
 .hobby__list
@@ -606,8 +698,8 @@ main
 
 .btn-sitio[disabled]
 {
-    background-color: var(--colorLightText);
-    border: 1px solid var(--colorLightText);
+    background-color: var(--colorDisabled);
+    border: 1px solid var(--colorDisabled);
 }
 
 .btn-repo
@@ -625,8 +717,8 @@ main
 
 .btn-repo[disabled]
 {
-    color: var(--colorLightText);
-    border: 1px solid var(--colorLightText);
+    color: var(--colorDisabled);
+    border: 1px solid var(--colorDisabled);
 }
 
 /* Division de Contactos */
@@ -702,6 +794,7 @@ main
     padding: 15px;
     margin-bottom: 10px;
     width: 100%;
+    background-color: var(--colorForm);
 }
 
 .form-control:focus
@@ -742,7 +835,7 @@ textarea
 footer
 {
     height: var(--footerH);
-    background: var(--colorLightBg2);
+    background: var(--colorFooter);
 
     display: flex;
     justify-content: space-around;
@@ -847,6 +940,12 @@ footer span, .social-media, .action
         display: flex;
         align-items: center;
         padding: 0 10px;
+    }
+
+    .mode
+    {
+        margin-left: 10px;
+        width: 80px;
     }
 
     #menu-icon
@@ -1111,6 +1210,12 @@ footer span, .social-media, .action
 }
 
 @media screen and (min-width:1280px) {
+    /* Nav */
+    .mode
+    {
+        width: 100px;
+    }
+
     /* Division de Acerca */
     .card-resume
     {
@@ -1161,7 +1266,7 @@ footer span, .social-media, .action
     .skills 
     {
         padding: 15px 25px 0 15px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 
     .skill__icon
