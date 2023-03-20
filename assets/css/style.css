@@ -76,8 +76,8 @@ body.dark
     --colorBg1Alt:#2E4F4F;
     --colorBg2:#476D7C;
     --colorBg2Alt:rgb(85, 106, 124);
-    --colorDet:#05d9ff;
-    --colorDetAlt:#3aaef1;
+    --colorDet:#3adcf8;
+    --colorDetAlt:#00ffff;
     --colorDetExtra:#061a33;
     --colorDisabled:#7da7c0;
     --colorForm:rgb(206, 220, 233);
@@ -85,7 +85,7 @@ body.dark
     --colorText1:#A3C7D6;
     --colorText2:#79A3B1;
     --colorText3:#01A9B4;
-    --colorText4:#D0E8F2;
+    --colorText4:#4a5053;
 }
 
 
@@ -334,7 +334,7 @@ main
 {
     background: var(--colorDet);
     border: 2px solid var(--colorDet);
-    color: white;
+    color: var(--colorText4);
     margin-top: 20px;
 
     display: flex;
@@ -438,7 +438,7 @@ main
 {
     content:'';
     position: absolute;
-    background: var(--colorDetAlt);
+    background: var(--colorDet);
     width: 5px;
     height: 100%;
     left: 10px;
@@ -448,7 +448,7 @@ main
 .formation__title
 {
     margin-left: 15px;
-    color: white;
+    color: var(--colorText3);
 }
 
 .formation__place
@@ -854,6 +854,11 @@ footer span, .social-media, .action
     align-items: center;
 }
 
+footer span
+{
+    color: var(--colorDet);
+}
+
 .action
 {
     justify-content: flex-end;
@@ -882,7 +887,7 @@ footer span, .social-media, .action
 
     border: 1px solid var(--colorDet);
     background: var(--colorDet);
-    color: white;
+    color: var(--colorText4);
 }
 
 .btn-small:hover
