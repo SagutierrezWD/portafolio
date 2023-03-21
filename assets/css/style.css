@@ -531,7 +531,7 @@ main
 
 .htmltag
 {
-    background-image: url(/assets/resource/htmlicon.png);
+    background-image: url(../resource/htmlicon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -539,7 +539,7 @@ main
 
 .css
 {
-    background-image: url(/assets/resource/cssicon.png);
+    background-image: url(../resource/cssicon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -547,7 +547,7 @@ main
 
 .js 
 {
-    background-image: url(/assets/resource/js.png);
+    background-image: url(../resource/js.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -555,7 +555,7 @@ main
 
 .php 
 {
-    background-image: url(/assets/resource/php.png);
+    background-image: url(../resource/php.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -563,7 +563,7 @@ main
 
 .ts 
 {
-    background-image: url(/assets/resource/typescript.png);
+    background-image: url(../resource/typescript.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -571,7 +571,7 @@ main
 
 .ang
 {
-    background-image: url(/assets/resource/angular.png);
+    background-image: url(../resource/angular.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -579,7 +579,7 @@ main
 
 .react 
 {
-    background-image: url(/assets/resource/reacti.png);
+    background-image: url(../resource/reacti.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -587,7 +587,7 @@ main
 
 .git
 {
-    background-image: url(/assets/resource/git.png);
+    background-image: url(../resource/git.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;    
@@ -643,7 +643,7 @@ main
 
 .working
 {
-    background-image: url(/assets/resource/working.png);
+    background-image: url(../resource/working.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -652,7 +652,7 @@ main
 
 .p1
 {
-    background-image: url(/assets/resource/p1.jpg);
+    background-image: url(../resource/p1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -980,7 +980,7 @@ footer span
         /* Espacio asignado para ilustracion */
         width: 45%;
         aspect-ratio: 4/3;
-        background-image: url(/assets/resource/deco.png);
+        background-image: url(../resource/deco.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
