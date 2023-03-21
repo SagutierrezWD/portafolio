@@ -980,7 +980,7 @@ footer span
         /* Espacio asignado para ilustracion */
         width: 45%;
         aspect-ratio: 4/3;
-        background-image: url(/assets/resource/illus.png);
+        background-image: url(/assets/resource/deco.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
