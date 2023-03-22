@@ -897,6 +897,31 @@ footer span
 }
 
 
+/* Succes page */
+.success
+{
+    width: 100dvw;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--colorBg2Alt);
+}
+
+.success .title
+{
+    font-size: 2rem;
+}
+
+.success p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+
 @media screen and (min-width:768px) {
     /* Nav */
     nav
@@ -1053,6 +1078,17 @@ footer span
     .form-row
     {
         width: 100%;
+    }
+
+
+    /* Success page */
+    .success .title
+    {
+        font-size: 3rem;
+    }
+
+    .success p{
+        font-size: 2rem;
     }
 }
 
