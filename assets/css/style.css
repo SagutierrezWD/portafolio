@@ -6,28 +6,7 @@
     --minContainerH:250px;
     --buttonRadius:15px;
 
-    /* Tema Claro */
-    --colorLightBg:#DDF7E3;
-    --colorLightBg2:#C9EEFF;
-    --colorLightDet:#62CDFF;
-    --colorLightText:#4E6E81;
-    --colorLightText2:#060047;
-
-    /* Tema 2.0 */
-    /* --colorBg1:#EBFFFA;
-    --colorBg1Alt:#D9F9F4;
-    --colorBg2:#9CD9DE;
-    --colorBg2Alt:#86C1D4;
-    --colorDet:#005792;
-    --colorDetAlt:#0779E4;
-    --colorDetExtra:#005792;
-    --colorDisabled:#4E6E81;
-    --colorText1:#456268;
-    --colorText2:#79A3B1;
-    --colorText3:#01A9B4;
-    --colorText4:#D0E8F2; */
-
-    /* Tema 3.0 */
+    /* Tema base (Claro)*/
     --colorBg1:#EBFFFA;
     --colorBg1Alt:#D9F9F4;
     --colorBg2:#9CD9DE;
@@ -42,13 +21,6 @@
     --colorText2:#79A3B1;
     --colorText3:#01A9B4;
     --colorText4:#D0E8F2;
-
-    /* Tema Oscuro */
-    --colorDarkBg:#2C3333; /* 60% */
-    --colorDarkBg2:#2E4F4F; /* 30% */
-    --colorDarkDet:#0E8388; /* 10% */
-    --colorDarkText:#CBE4DE;
-    --colorDarkText2:#62CDFF;
 }
 
 *
@@ -129,7 +101,6 @@ nav
         bottom:0;
         right: 0;
         left: 40%;
-        /* height: calc(100vh - var(--navH)); */
         transition: transform 0.3s;
         pointer-events: none;
         list-style: none;
@@ -225,7 +196,6 @@ nav
     display: none;
     list-style: none;
     position: fixed;
-    /* width: 100%; */
     height: calc(100% - var(--navH));
     top: var(--navH);
     right: 0;
@@ -273,8 +243,6 @@ main
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* max-width: 1400px; */
-    /* margin: 0 auto; */
 } 
 
 
@@ -285,7 +253,6 @@ main
     
     width: 100%;
     height: calc(100vh + 5rem);
-    /* position: relative; */
 
     display: flex;
     flex-direction: column;
@@ -295,9 +262,6 @@ main
 
 .hero__text
 {
-    /* position: absolute;
-    left: 7rem; */
-    /* margin-top: calc(var(--navH) +  2rem); */
     padding: 15px;
     width: 90%;
     display: flex;
@@ -388,7 +352,6 @@ main
     padding: 15px;
     margin-top: -50px;
     border-radius: 15px;
-    /* max-width: 900px; */
 }
 
 .card-resume p
@@ -527,51 +490,39 @@ main
 {
     width: 40px;
     aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .htmltag
 {
-    background-image: url(../resource/htmlicon.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(/assets/resource/htmlicon.png);
 }
 
 .css
 {
-    background-image: url(../resource/cssicon.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(/assets/resource/cssicon.png);
 }
 
 .js 
 {
-    background-image: url(../resource/js.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(/assets/resource/js.png);
 }
 
 .php 
 {
-    background-image: url(../resource/php.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(/assets/resource/php.png);
 }
 
 .ts 
 {
-    background-image: url(../resource/typescript.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(/assets/resource/typescript.png);
 }
 
 .ang
 {
-    background-image: url(../resource/angular.png);
+    background-image: url(/assets/resource/angular.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -579,18 +530,12 @@ main
 
 .react 
 {
-    background-image: url(../resource/reacti.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-image: url(/assets/resource/reacti.png);
 }
 
 .git
 {
-    background-image: url(../resource/git.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;    
+    background-image: url(/assets/resource/git.png); 
 }
 
 /* Division de Proyectos */
@@ -639,23 +584,21 @@ main
     display: flex;
     position: relative;
     overflow: hidden;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .working
 {
-    background-image: url(../resource/working.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(/assets/resource/working.png);
     background-color: var(--colorBg2Alt);
 }
 
 .p1
 {
-    background-image: url(../resource/p1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(/assets/resource/p1.jpg);
 }
 
 .project__details
@@ -929,22 +872,6 @@ footer span
         justify-content: space-around;
     }
 
-    /* .nav__list
-    {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-    }
-
-    .nav__link
-    {
-        padding: 5px 10px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    } */
-
     .nav__list 
     {
         top: initial;
@@ -1005,7 +932,7 @@ footer span
         /* Espacio asignado para ilustracion */
         width: 45%;
         aspect-ratio: 4/3;
-        background-image: url(../resource/deco.png);
+        background-image: url(/assets/resource/deco.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1313,7 +1240,6 @@ footer span
     .skills 
     {
         padding: 15px 25px 0 15px;
-        /* margin-top: 10px; */
     }
 
     .skill__icon
