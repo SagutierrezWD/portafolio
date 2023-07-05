@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Sergio | Desarrollador Front End</title>
+</head>
+<body id="body">
+    <header>
+        <div class="switch">
+            <label for="switchTheme" switch-control>
+                <i class='bx bxs-sun' sun></i>
+                <i class='bx bxs-moon' moon></i></label>
+            <input type="checkbox" name="Switch de tema claro/oscuro" id="switchTheme">
+        </div>
+        
+        <label for="menu">
+            <i class="bx bx-menu menu"></i>
+            <i class='bx bxs-arrow-from-left arrow'></i>
+        </label>
+        <input type="checkbox" name="menu" id="menu">
+    </header>
+    
+    <div class="modal">
+        <div class="modal-body">
+           <img src="" alt="imagen del proyecto" id="img-pro">
+           <i class='bx bx-x close' id="close"></i>
+        </div>
+    </div>
+
+    <main>
+        <aside>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#hero" data-name="Inicio"><i class='bx bx-home'></i></a></li>
+                    <li><a href="#about-me" data-name="Sobre mi"><i class='bx bxs-user-detail'></i></a></li>
+                    <li><a href="#skills" data-name="Habilidades"><i class='bx bx-book-content'></i></a></li>
+                    <li><a href="#projects" data-name="Proyectos"><i class='bx bx-briefcase'></i></a></li>
+                    <li><a href="#contacts" data-name="Contactos"><i class='bx bx-envelope'></i></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="hero" id="hero">
+            <div class="meet">
+                <h2>Hola, me llamo <span class="meet-featured">Sergio</span></h2>
+                <h1>Desarrollador Front End</h1>
+
+                <a href="#skills" class="btn btn1 btn-hero"><span>Habilidades</span></a>
+                <a href="https://docs.google.com/document/d/1Tg21BkBCUDviUIo5Bm_8Xe2Mh_KMBhp7/edit?usp=sharing&ouid=101925182569541607032&rtpof=true&sd=true" target="_blank" class="btn btn2 btn-hero"><span>Mi CV</span></a> 
+            </div>
+        </section>
+
+        <section class="about-me" id="about-me">
+            <div class="container">
+                <div class="block block-a">
+                    <div class="a-right">
+                        <div class="title-piece" style="z-index: 20;">
+                            <h3 class="title">Sobre mi</h3>
+                        </div>
+                        
+                        <div class="desc-piece">
+                            <p>
+                                Hace un par de años cuando estaba en mi carrera de ingeniería de sistemas descubrí lo mucho que me apasionaba programar y decidí seguir aprendiendo.
+                            </p>
+
+                            <p>
+                                Desde entonces he adquirido conocimientos tanto en HTML, CSS, Javascript, PHP, Angular, Reac, Git, entre otras diferentes tecnologías. 
+                            </p>
+
+                            <p>
+                                He adquirido experiencia desarrollando tanto en mis practicas profesionales, en las cuales desarrolle junto a un equipo una plataforma para mi instituto destinada a cientos de estudiantes, como en mis aportes a un desarrollador con el cual trabaje en un par de proyectos suyos en los que aprendí nuevas tecnologías, además de la importancia de la gestión del tiempo, la comunicación y un poco del trabajo bajo presión.
+                                Actualmente estoy preparándome porque me encantaría tener la oportunidad de crecer como profesional trabajando junto a un equipo.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-piece"></div>
+                </div>
+
+                <div class="block block-b">
+                    <div class="info-list" >
+                        <h3>Experiencia</h3>
+
+                        <div class="exp">
+                            <h4>Ayudante trainee</h4>
+                            <h5>Independiente</h5>
+                            <span>Septiembre 2021 - Marzo 2023</span>
+                            <ul>
+                                <li>Desarrollo de componentes y servicios en 4 diferentes proyectos</li>
+                                <li>Consumo de servicios en los componentes para funcionalidades y la interacción con la base de datos</li>
+                                <li>Creación de rutas en los controladores del backend con PHP y Slim Framework</li>
+                                <li>Pruebas unitarias tanto de servicios  como de componentes del proyecto con coberturas sobre el 85%</li> 
+                                <li>Administración del código con Git aplicando conceptos de GitFlow</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="exp">
+                            <h4>Practicante</h4>
+                            <h5>IES INFOTEP</h5>
+                            <span>Agosto 2020 - Diciembre 2020</span>
+                            <ul>
+                                <li>Desarrollo en equipo de una plataforma con PHP para cerca de 1000 usuarios</li>
+                                <li>Desarrollo de las funcionalidades requeridas para el funcionamiento adecuado de la plataforma</li>
+                                <li>Diseño de la base de datos e implementación del backend al proyecto con MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-list">
+
+                        <h3>Formaciones</h3>
+
+                        <div class="formation">
+                            <h4>Ingenieria de sistemas</h4>
+                            <h5>IES INFOTEP</h5>
+                            <span>Febrero 2019 - Junio 2021</span>
+                        </div>
+
+                        <div class="formation">
+                            <h4>Desarrollo Front End</h4>
+                            <h5>Alura Latam</h5>
+                            <span>Diciembre 2022 - Julio 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="skill-text">
+                    <div class="title-piece">
+                        <h3 class="title">Habilidades</h3>
+                    </div>
+        
+                    <div class="desc-piece">
+                        
+                        <p>
+                            He adquirido a lo largo de mis estudios independientes, el programa ONE y de otras fuentes, conocimientos y experiencia en diferentes tecnologias como:
+                        </p>
+    
+                    </div>
+                </div>
+
+                <div class="skill-icons" style="width: 100%;">
+                    <ul class="skill-list">
+                        <li><i class='bx bxl-html5 bg-white' style="color: orangered; margin-right: 5px;"></i> HTML</li>
+                        <li><i class='bx bxl-css3 bg-white' style="color: blue; margin-right: 5px;"></i> css</li>
+                        <li><i class='bx bxl-javascript bg-black' style="color: yellow; margin-right: 5px;"></i> Javascript</li>
+                        <li><i class='bx bxl-angular bg-white' style="color: red; margin-right: 5px;"></i> Angular</li>
+                        <li><i class='bx bxl-react bg-black' style="color: cyan; margin-right: 5px;"></i> React</li>
+                        <li><i class='bx bxl-git bg-white' style="color: orangered; margin-right: 5px;"></i> Git</li>
+                        <li><i class='bx bxl-php' style="color: black; background-color: purple; margin-right: 5px;"></i> PHP</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="title-piece main">
+                    <h3 class="title">Proyectos</h3>
+                </div>
+                <div class="project">
+                    <div class="p-up">
+                        <div class="img-piece" id="zoom">
+                            <img src="assets/img/pro1.jpg" alt="Imagen del proyecto 1" style="width: 100%; inset: 0;">
+                            <i class="bx bxs-zoom-in zoom"></i>
+                        </div>
+    
+                        <div class="title-piece">
+                            <h2 title>Proyecto 1</h2>
+                            <h2 project-title>Alurageek Ecommerce</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="p-down">
+                        <div class="action-piece">
+                            <a href="https://github.com/SagutierrezWD/alurageek_ecommerce" target="_blank"><i class='bx bxl-github'></i> <span>Ver código</span></a>
+                            
+                            <a href="https://sagutierrezwd.github.io/alurageek_ecommerce/" target="_blank"><i class='bx bx-link-external'></i> <span>Ver demo</span></a>
+                        </div>
+                        
+                        <div class="desc-piece">
+                            
+                            <p>Alurageek es uno de los retos planteados en el programa ONE y consiste en una plataforma donde puedes comprar diferentes tipos de equipos como un usuario y tambien administrar los productos como un administrador. Fue realmente interesante trabajar Javascript con módulos sin un framework, me costo un poco trabajar en la lógica pero el proyecto se pudo terminar con todas las caracteristicas que queria que tuviera, ademas que practique y reforze mucho mis conocimientos en CSS.</p>
+                            
+                            <ul class="tech-list">
+                                <h4>Tecnologias usadas: </h4>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="p-up reverse">
+                        <div class="img-piece" id="zoom">
+                            <img src="assets/img/pro2.jpg" alt="Imagen del proyecto 1" style="width: 100%; inset: 0;">
+                            <i class="bx bxs-zoom-in zoom"></i>
+                        </div>
+                        
+                        <div class="title-piece">
+                            <h2 title>Proyecto 2</h2>
+                            <h2 project-title>Aluraflix</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="p-down reverse">
+                        <div class="action-piece">
+                            <a href="https://github.com/SagutierrezWD/aluraflix" target="_blank"><i class='bx bxl-github'></i> <span>Ver código</span></a>
+                            
+                            <a href="https://aluraflix-tan.vercel.app" target="_blank"><i class='bx bx-link-external'></i> <span>Ver demo</span></a>
+                        </div>
+    
+                        <div class="desc-piece">
+                            
+                            <p>Aluraflix es otro de los retos propuestos en el programa ONE y consiste en una plataforma donde puedes ver y agregar videos de diferentes categorias. Con este proyecto tuve mi primer acercamiento a React, el cual no fue facil al principio, pero una vez que comprendi como funcionaba pude desarrollar todo lo que requeria el proyecto. Fue emocionante trabajar con React y me intereso mucho la forma de hacer sitios con componentes y el uso de hooks para darle vida al sitio.</p>
+                        
+                            <ul class="tech-list">
+                                <h4>Tecnologias usadas: </h4>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>React</li>
+                                <li>Styled Components</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="p-up">
+                        <div class="img-piece" id="zoom">
+                            <img src="assets/img/pro3.jpg" alt="Imagen del proyecto 1" style="width: 100%; inset: 0;">
+                            <i class="bx bxs-zoom-in zoom"></i>
+                        </div>
+                        
+                        <div class="title-piece">
+                            <h2 title>Proyecto 3</h2>
+                            <h2 project-title>Dictionary</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="p-down">
+                        <div class="action-piece">
+                            <a href="https://github.com/SagutierrezWD/dictionary" target="_blank"><i class='bx bxl-github'></i> <span>Ver código</span></a>
+
+                            <a href="https://dictionary-gamma-six.vercel.app" target="_blank"><i class='bx bx-link-external'></i> <span>Ver demo</span></a>
+                        </div>
+    
+                        <div class="desc-piece">
+                            
+                            <p>Dictionary es un proyecto que decidi hacer por mi cuenta para probar mis conocimientos, habilidades y ver que soy capaz de hacer. Obtuve inspiracion de este proyecto en uno de los muchos retos de la plataforma Frontend Mentor, pero decidi hacer este porque me llamo mucho la atencion su diseño y tambien como podria hacerlo funcionar. Este proyecto funciona gracias a la api de un tercero llamado Dictionary.</p>
+                        
+                            <ul class="tech-list">
+                                <h4>Tecnologias usadas: </h4>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contact-desc">
+                    <h3>¿Quieres comunicarte conmigo?</h3>
+                    <h4>Contactame en cualquiera de estos medios, atendere tus preguntas e inquietudes.</h4>
+                    
+                    <ul class="contact-list">
+                        <li><a href="mailto:Sergiogutierrezp122@gmail.com"><i class="bx bx-envelope"></i> Sergiogutierrezp122@gmail.com</a></li>
+                        <li><a href="tel:+573015700310"><i class="bx bx-phone"></i> +57 3015700310</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-form">
+
+                    <form action="https://formsubmit.co/5b2850e523afdc533fe0aa4184a19fc4 " method="POST">
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <!-- Disable captcha  -->
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <label class="input-label" for="name">Nombre</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Me llamo..." minlength="2" maxlength="40" required>
+                        
+                        <label class="input-label" for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Mi email es..." minlength="5" maxlength="40" required>
+                        
+                        <label class="input-label" for="subject">Asunto</label>
+                        <input class="form-control" type="text" name="subject" id="subject" placeholder="Mi asunto es..." minlength="3" maxlength="60" required>
+                        
+                        <label class="input-label" for="message">Mensaje</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Quiero contarte que..." minlength="10" maxlength="800" required></textarea>
+                        
+                        <button class="btn btn-submit" type="submit"><span>Enviar</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span>@2023 - Sergio | Desarrollador Front End</span>
+
+            <ul class="footer-list">
+                <h4>Contactos</h4>
+
+                <li><a href="mailto:Sergiogutierrezp122@gmail.com"><i class="bx bx-envelope"></i> Sergiogutierrezp122@gmail.com</a></li>
+                <li><a href="tel:+573015700310"><i class="bx bx-phone"></i> +57 3015700310</a></li>
+            </ul>
+
+            <ul class="footer-list">
+                <h4>Redes</h4>
+                <li><a href="https://github.com/SagutierrezWD" target="_blank">
+                    <i class='bx bxl-github'></i>
+                    Github
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/sagutierrezwd/" target="_blank">
+                    <i class='bx bxl-linkedin-square'></i>
+                    Linkedin
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
