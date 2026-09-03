@@ -1,0 +1,283 @@
+/* Reseteo de estilos por defecto */
+html, body, div, span, h1, h2, h3, p, a, ul, li, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}   
+
+:root {
+    --padding-section: 60px;
+    --padding-content: 30px;
+    --font-content: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    /* 1. Carga la imagen de fondo */
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+/* Menu */
+
+.sidebar {
+    position: fixed;
+    padding: 20px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1C2541;
+    width: auto;
+    z-index: 20;
+    border-radius: 15px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a > i {
+    font-size: 30px;
+}
+
+.menu > li > a {
+    position: relative;
+}
+
+.menu-item a::before {
+    position: absolute;
+    font-size: 20px;
+    width: auto;
+    right: 60px;
+    background-color: #1C2541;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-item a.link1::before {
+    content: "Inicio";
+}
+
+.menu-item a.link2::before {
+    content: "Sobre mi";
+}
+
+.menu-item a.link3::before {
+    content: "Habilidades";
+}
+
+.menu-item a.link4::before {
+    content: "Portafolio";
+}
+
+.menu-item a.link5::before {
+    content: "Contactame";
+}
+
+.menu-item a:hover::before {
+    opacity: 1;
+    display: initial;
+}
+
+/* Hero */
+
+.text {
+    font-size: var(--font-content);
+    margin-bottom: 5px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.hero {
+    min-height: 400px;
+    padding: var(--padding-section);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-size: 50px;
+    color: aqua;
+    margin-bottom: 40px;
+    align-self: start;
+}
+
+.hero-subtitle {
+    font-size: 120px;
+    color: greenyellow;
+    align-self: center;
+}
+
+.welcome {
+    color: white;
+    font-size: var(--font-content);
+    align-self: center;
+    margin: 30px 0 30px 0;
+}
+
+.btn-section {
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+.btn {
+    padding: 20px;
+    font-size: var(--font-content);
+    border-radius: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn1 {
+    border: 2px solid aqua;
+}
+
+.btn2 {
+    border: 2px solid greenyellow;
+}
+
+/* Sobre mi */
+
+.intro {
+    padding: var(--padding-section);
+}
+
+.title-section {
+    color: aqua;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    margin-bottom: 40px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 30px;
+    border-end-end-radius: 0;
+}
+
+.bubble {
+    background-color: white;
+    padding: var(--padding-content);
+    width: 90%;
+    max-width: calc(700px - calc(2 * var(--padding-content)));
+    border-radius: 15px;
+}
+
+/* Formulario */
+.formulary-section {
+    padding: var(--padding-section);
+    padding-top: 0;
+}
+
+.formularyContact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.formulary-section h3 {
+    color: aqua;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.formularyContact label {
+    font-size: var(--font-content);
+}
+
+.formularyContact input {
+    padding: 15px;
+    font-size: var(--font-content);
+}
+
+/* Pié de página */
+
+footer {
+    background-color: rgba(28, 37, 75, 0.75);
+    padding: var(--padding-section);
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.footer-subtitle {
+    font-size: 40px;
+    color: aqua;
+}
+
+.footer-list_item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Media queries */
+@media screen and (max-width: 450px) {
+    /* Hero */
+    .hero-subtitle {
+        font-size: 60px;
+    }
+
+    .btn-section {
+        flex-direction: column;
+    }
+
+    .btn2 {
+        margin-top: 20px;
+    }
+
+    /* Formulario */
+    .formularyContact input {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Pié de página */
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+}
